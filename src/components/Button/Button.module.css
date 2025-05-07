@@ -1,0 +1,29 @@
+.button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 14px;
+}
+
+.whatsapp {
+  background-color: var(--accent-color);
+  color: #8BF3BB;
+}
+
+.whatsapp:hover {
+  background-color: #22A95C;
+  color: #8BF3BB;
+}
+
+/* Para o botão menor do header */
+.small {
+  padding: 8px 15px;
+  font-size: 13px;
+}

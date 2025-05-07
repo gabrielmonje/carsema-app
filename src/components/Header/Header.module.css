@@ -1,0 +1,148 @@
+.header {
+  background-color: #e4f3ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 36px;
+}
+
+.center {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1a1a40;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+.right {
+  margin-left: 1.5rem;
+}
+
+.right a {
+  color: #8BF3BB !important;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1a1a40;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4f3ff;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.4s ease, transform 0.4s ease;
+  padding: 0 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.mobileMenu.open {
+  max-height: 300px;
+  padding: 1rem 2rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobileMenu a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #1a1a40;
+  border-bottom: 1px solid #dbe9f5;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.mobileMenu a:nth-child(1) { animation-delay: 0.1s; }
+.mobileMenu a:nth-child(2) { animation-delay: 0.2s; }
+.mobileMenu a:nth-child(3) { animation-delay: 0.3s; }
+.mobileMenu a:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .center {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .left {
+    order: 1;
+    flex: 1;
+  }
+
+  .hamburger {
+    order: 3;
+    margin-left: auto;
+  }
+}

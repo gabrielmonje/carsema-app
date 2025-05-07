@@ -1,0 +1,50 @@
+.partnersSection {
+    background-color: var(--partners-bg); /* Um cinza bem claro */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .title {
+    font-family: var(--main-sans-serif-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 500; /* Um pouco menos pesado que o título principal */
+  }
+  
+  .logosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espaço entre os logos */
+  }
+  
+  .logoItem {
+    /* Estilo do placeholder do logo */
+    height: 50px; /* Ajuste conforme os logos reais */
+    padding: 0 20px; /* Adiciona algum padding lateral para que o texto não fique colado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px dashed #ccc; */ /* Opcional: para visualizar o placeholder */
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem;
+    min-width: 120px; /* Para garantir algum espaço para o nome */
+    text-transform: uppercase; /* Como alguns logos na imagem */
+  }
+  
+  /* Quando você adicionar <img> tags, estilize-as aqui:
+  .logoItem img {
+    max-height: 40px;
+    max-width: 150px;
+    object-fit: contain;
+  }
+  */
