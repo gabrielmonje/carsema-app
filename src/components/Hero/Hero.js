@@ -1,19 +1,19 @@
 import React from 'react';
 import styles from './Hero.module.css';
 import Button from '../Button/Button';
-import bg from '../../assets/images/gradient-bg.png'
+import bg from '../../assets/images/gradient-bg.png';
+import Partners from '../Partners/Partners';
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      {/* Background gradiente ou imagem */}
+      {/* Background gradiente */}
       <div
         className={styles.heroBackground}
-        style={{
-          backgroundImage: `url(${bg})`,
-        }}
+        style={{ backgroundImage: `url(${bg})` }}
       ></div>
 
+      {/* Container principal */}
       <div className={styles.container}>
         {/* Coluna da esquerda */}
         <div className={styles.leftColumn}>
@@ -39,6 +39,11 @@ const Hero = () => {
           <p className={styles.taglineMain}>Você Seguro.</p>
           <p className={styles.taglineSecondary}>Sempre.</p>
         </div>
+      </div>
+
+      {/* Seção de parceiros */}
+      <div className={styles.partnersWrapper}>
+        <Partners />
       </div>
     </section>
   );

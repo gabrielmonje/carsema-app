@@ -1,7 +1,7 @@
 .hero {
   min-height: 85vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   padding: 50px 0 0px;
   position: relative;
@@ -28,7 +28,7 @@
   padding: 0 32px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
   z-index: 1;
 }
@@ -53,8 +53,8 @@
 .title {
   font-weight: 400;
   font-family: var(--main-sans-serif-font);
-  font-size: 4.5rem;
-  margin: 0;
+  font-size: 4rem;
+  margin: 3rem 0 0;
   line-height: 0.5;
   color: var(--primary-color);
 }
@@ -71,7 +71,7 @@
 
 .description {
   font-family: var(--main-sans-serif-font);
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 1.6;
   max-width: 450px;
   color: var(--primary-color);
@@ -90,10 +90,14 @@
   justify-content: flex-start;
   align-items: flex-end;
   text-align: right;
-  padding: 1rem 1.5rem;
+  padding: 32px 1.5rem 0;
   max-height: 300px;
   color: var(--primary-color);
+
+  /* Novo: eleva sem quebrar layout */
+  transform: translateY(-9rem);
 }
+
 
 .taglineMain,
 .taglineSecondary {
@@ -108,12 +112,83 @@
   margin-top: 5px;
 }
 
-/* 🔁 RESPONSIVO */
-@media (max-width: 1024px) {
+/* PARCEIROS */
+.partnersWrapper {
+  width: 100vw;
+  padding: 0;
+  background: none;
+  backdrop-filter: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  gap: 1.5rem;
+}
+
+.titleBox {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+.partnersTitle {
+  font-family: var(--main-sans-serif-font);
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 2rem 0;
+}
+
+.track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 40s linear infinite;
+  width: fit-content;
+}
+
+.logoItem {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.logoItem img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logoItem:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .leftColumn,
@@ -124,20 +199,32 @@
 
   .title {
     font-size: 3rem;
+    line-height: 1;
+    margin-top: 2rem;
   }
 
   .subtitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    padding-left: 0;
   }
 
   .description {
-    font-size: 1rem;
-    max-width: 90%;
-    margin: 2rem 0 2rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem;
   }
 
   .taglineMain,
   .taglineSecondary {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+  }
+
+  .rightColumn {
+    padding: 0;
+    max-height: none;
+    transform: none;
+  }
+
+  .heroButton {
+    margin: 1rem 0 2rem;
   }
 }
