@@ -2,7 +2,9 @@ import React from 'react';
 import styles from './Button.module.css';
 import whatsIcon from '../../assets/icons/whatsIcon.svg';
 
-const Button = ({ children, href = "#", variant = 'primary', hasIcon = false, className = '' }) => {
+// Default variant was "primary" but no corresponding style existed.
+// Use the existing "whatsapp" style as the default to avoid undefined classes.
+const Button = ({ children, href = "#", variant = 'whatsapp', hasIcon = false, className = '' }) => {
   return (
     <a
       href={href}
