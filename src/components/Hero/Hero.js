@@ -25,7 +25,7 @@ const Hero = () => {
             Seguro sob medida para você, de forma rápida e sem complicação.
           </p>
           <Button
-            href="https://wa.me/SEUNUMEROAQUI"
+            href="https://wa.me/5511963304004?text=Oi,%20gostaria%20de%20informações%20sobre%20os%20seguros,%20por%20favor!"
             variant="whatsapp"
             hasIcon
             className={styles.heroButton}
