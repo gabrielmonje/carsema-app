@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/carsema-app/static/css/main.2f65fd90.css",
-    "main.js": "/carsema-app/static/js/main.bab1f238.js",
+    "main.css": "/carsema-app/static/css/main.022bb05b.css",
+    "main.js": "/carsema-app/static/js/main.c599efe1.js",
     "static/js/453.5b2a9559.chunk.js": "/carsema-app/static/js/453.5b2a9559.chunk.js",
     "static/media/gradient-bg.png": "/carsema-app/static/media/gradient-bg.64e57ca23120dedfc6bb.png",
     "static/media/logo.svg": "/carsema-app/static/media/logo.d5dc9a995af1e7401e0a6174e0101c37.svg",
     "static/media/logo-tokio.png": "/carsema-app/static/media/logo-tokio.9ac9b8bb2a387b57a83d.png",
     "static/media/whatsIcon.svg": "/carsema-app/static/media/whatsIcon.0a2f3982b3cf90ecbc94e05ea0898eda.svg",
     "index.html": "/carsema-app/index.html",
-    "main.2f65fd90.css.map": "/carsema-app/static/css/main.2f65fd90.css.map",
-    "main.bab1f238.js.map": "/carsema-app/static/js/main.bab1f238.js.map",
+    "main.022bb05b.css.map": "/carsema-app/static/css/main.022bb05b.css.map",
+    "main.c599efe1.js.map": "/carsema-app/static/js/main.c599efe1.js.map",
     "453.5b2a9559.chunk.js.map": "/carsema-app/static/js/453.5b2a9559.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f65fd90.css",
-    "static/js/main.bab1f238.js"
+    "static/css/main.022bb05b.css",
+    "static/js/main.c599efe1.js"
   ]
 }
