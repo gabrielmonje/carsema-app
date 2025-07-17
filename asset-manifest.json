@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/carsema-app/static/css/main.022bb05b.css",
-    "main.js": "/carsema-app/static/js/main.fb139bd2.js",
+    "main.js": "/carsema-app/static/js/main.170f83c4.js",
     "static/js/453.5b2a9559.chunk.js": "/carsema-app/static/js/453.5b2a9559.chunk.js",
     "static/media/gradient-bg.png": "/carsema-app/static/media/gradient-bg.64e57ca23120dedfc6bb.png",
     "static/media/logo.svg": "/carsema-app/static/media/logo.d5dc9a995af1e7401e0a6174e0101c37.svg",
@@ -9,11 +9,11 @@
     "static/media/whatsIcon.svg": "/carsema-app/static/media/whatsIcon.0a2f3982b3cf90ecbc94e05ea0898eda.svg",
     "index.html": "/carsema-app/index.html",
     "main.022bb05b.css.map": "/carsema-app/static/css/main.022bb05b.css.map",
-    "main.fb139bd2.js.map": "/carsema-app/static/js/main.fb139bd2.js.map",
+    "main.170f83c4.js.map": "/carsema-app/static/js/main.170f83c4.js.map",
     "453.5b2a9559.chunk.js.map": "/carsema-app/static/js/453.5b2a9559.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.022bb05b.css",
-    "static/js/main.fb139bd2.js"
+    "static/js/main.170f83c4.js"
   ]
 }
