@@ -46,7 +46,7 @@ const Header = () => {
         {/* Botão WhatsApp */}
         <div className={styles.right}>
           <Button
-            href="https://wa.me/5511963304003?text=Oi,%20gostaria%20de%20informações%20sobre%20os%20seguros,%20por%20favor!"
+            href="https://wa.me/5511976837536?text=Olá!,%20Gostaria%20de%20fazer%20uma%20cotação%20de%20seguro%20ou%20obter%20mais%20informações.%20Pode%20me%20ajudar?"
             variant="whatsapp"
             hasIcon={true}
           >
